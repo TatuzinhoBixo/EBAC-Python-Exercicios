@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando_html_js</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> Integrando o HTML com o JavaScript</h1>
+            <h2> Formulário de comparação entre dois números</h2>
+        </div>
+    </header>
+    <section class="corpo">
+        <form class="formulario" id="form-numeros">
+            <h3>Número 1</h3>
+            <input type="number" id="numero1" required placeholder="Insira o primeiro número" />
+            <h3>Número 2</h3>
+            <input type="number" id="numero2" required placeholder="Insira o segundo número" />
+            <button class="botao-testar" type="submit" onclick="compararNumeros()">Comparar</button>
+        </form>
+    <div class="resposta">
+        <p class="Numero1Maior"></p>
+        <p class="Numero2Maior"></p>
+        <p class="NumeroIguais"></p>
+    </div>
+    </section> 
+    <script src="./main.js"></script>                                                                                                                                                                                                                                                   
+</body>
+</html>
