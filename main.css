@@ -1,0 +1,55 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body > header {
+    background-color: #5A5DED
+}
+
+header .container {  
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+section {
+    padding: 20px 0px; /* Margem do título para o corpo */
+    background-color: #B8FFFA;    
+}
+ 
+.formulario {
+    margin-left: 30px;   /*margem a esquerda do formulario */
+}
+
+.formulario > h3 {
+    margin-top: 15px;  /*margem entre os números */
+    width: 100%;
+}
+
+.formulario > input {
+    width: 13%;       /*tamanho da caixa de texto */
+}
+
+.botao-testar {
+    display: flex;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: rgb(190, 148, 226);
+}
+
+.resposta {
+    background-color: rgb(199, 175, 199);
+    margin-top: 10px;
+    margin-left: 30px;
+    max-width: 200px;
+}
