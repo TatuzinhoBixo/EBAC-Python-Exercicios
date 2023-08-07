@@ -1,55 +1,97 @@
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-body > header {
-    background-color: #5A5DED
+body {
+    background-color: #E7E7E7;
+    padding-top: 100px;
 }
 
-header .container {  
+header {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .container {
-    margin: auto;
-    max-width: 800px;
-    text-align: center;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-section {
-    padding: 20px 0px; /* Margem do título para o corpo */
-    background-color: #B8FFFA;    
-}
- 
-.formulario {
-    margin-left: 30px;   /*margem a esquerda do formulario */
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
 }
 
-.formulario > h3 {
-    margin-top: 15px;  /*margem entre os números */
+form input {
+    font-size: 24px;
+    background-color: #ffff;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+}
+
+form button{
+    background-color: #009432;
+    color: #ffff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table {
     width: 100%;
 }
 
-.formulario > input {
-    width: 13%;       /*tamanho da caixa de texto */
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.botao-testar {
-    display: flex;
-    margin-top: 10px;
+table td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 
-form button:hover {
-    background-color: rgb(190, 148, 226);
+table td img {
+    height: 30px;
 }
 
-.resposta {
-    background-color: rgb(199, 175, 199);
-    margin-top: 10px;
-    margin-left: 30px;
-    max-width: 200px;
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
 }
