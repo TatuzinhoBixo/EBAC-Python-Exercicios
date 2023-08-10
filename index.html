@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i>Agenda de Contatos</i></h1>
+            <img src="./images/agenda.png" alt="Agenda telefone">
+        </header>
+        <form id="form-dados">
+            <input type="text" id="nomeContato" placeholder="Nome do Contato">
+            <input type="number" id="codigoCidade" placeholder="DDD" style="width: 50px;">
+            <input type="number" id="numeroTelefone" placeholder="Número do Telefone" min="0">
+            <button type="submit">Adicionar +</button>
+        </form>    
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do contato
+                    </th>
+                    <th>
+                        Código
+                    </th>
+                    <th>
+                        Número Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="nome-valor">
+                        ---
+                    </td>
+                    <td id="ddd-valor">
+                        ---
+                    </td>
+                    <td id="telefone-valor">
+                        ---
+                    </td>
+                </tr>
+            </tfoot>        
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

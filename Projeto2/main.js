@@ -5,7 +5,7 @@ const atividades = []; //Arrays que recebe as atividades
 const notas = []; //Arrays que recebe as notas
 const spanAprovado = '<span class="resultado aprovado">Aprovado</span>'; //pegou o css para mudar de cor, css variavel
 const spanReprovado = '<span class="resultado reprovado">Reprovado</span>'; //pegou o css para mudar de cor, css variavel
-const notaMinima = parseFloat(prompt("Digite a nota mínima:6"));
+const notaMinima = parseFloat(prompt("Digite a nota mínima:"));
 
 let linhas = ''; //variavel global que faz que adicione uma nova linha a cada inserção
 
