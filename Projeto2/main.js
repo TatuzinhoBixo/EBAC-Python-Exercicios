@@ -41,7 +41,7 @@ function adicionaLinha() {
 
     inputNomeAtividade.value = '';
     inputNotaAtividade.value = '';
-};
+}
 
 function atualizaTabelas () {
     const corpoTabela = document.querySelector('tbody');

@@ -69,6 +69,27 @@ table td { /*tamanho formulário dos dados */
     
 }
 
+.success-message {  /*classe do p no html */
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none; /*Remove o contaúdo da tela */
+}
+
+.error-message {
+    font-size: 12px;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
+
 tfoot td {    /*conteúdo dos dados */
     text-align: center; /* Centraliza horizontalmente o conteúdo */
     vertical-align: middle; /* Centraliza verticalmente o conteúdo */

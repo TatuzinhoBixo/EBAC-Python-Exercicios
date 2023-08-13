@@ -14,22 +14,8 @@ function validaNome(nomeCompleto) {
 
 form.addEventListener ('submit', function(e) {
     e.preventDefault();
-    const inputNomeContato = document.getElementById('nomeContato');
-    const mensagemSucesso = `Nome registrado`;
-
-    formEvalido = validaNome(inputNomeContato.value);
-    if (formEvalido) {
-        const containerMesagemSucesso = document.querySelector('.success-message');
-        containerMesagemSucesso.innerHTML = mensagemSucesso;
-        containerMesagemSucesso.style.display = 'block';
-        adicionaLinha();
-        atualizaTabelas();
-        
-    }   else {
-            inputNomeContato.style.border = '1px solid red';
-            document.querySelector('.error-message').style.display = 'block';
-        }
-    
+    adicionaLinha();
+    atualizaTabelas();
 });
 
 function adicionaLinha () {
@@ -64,6 +50,3 @@ function atualizaTabelas () {
     const corpoTabela = document.querySelector('tbody');
     corpoTabela.innerHTML = linhas;
 }
-
-
-//incluir as premissias de somente aceitar o nome completo e o DDD com correção
