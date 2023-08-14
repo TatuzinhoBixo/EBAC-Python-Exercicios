@@ -71,6 +71,7 @@ table td { /*tamanho formulário dos dados */
 
 .success-message {  /*classe do p no html */
     font-size: 18px;
+    font-weight: bold;
     background-color: #27ae60;
     padding: 6px;
     color: #fff;
@@ -82,12 +83,15 @@ table td { /*tamanho formulário dos dados */
 
 .error-message {
     font-size: 18px;
+    font-weight: bold;
     padding: 6px;
     background-color: red;
     padding: 6px;
     color: #fff;
     margin-bottom: 8px;
     display: none;
+    margin-left: 15px;
+    max-width: 50%;
 }
 
 input.error {

@@ -16,7 +16,14 @@ form.addEventListener ('submit', function(e) {
     e.preventDefault();
     const inputNomeContato = document.getElementById('nomeContato');
     const mensagemSucesso = `Nome registrado`;
-    const mensagemError = `O nome devera ter sobrenome`;
+    const mensagemError = `O nome deverá ter sobrenome`;
+
+    const inputTelefone = document.getElementById('numeroTelefone');
+
+    if (telefone.includes(inputTelefone.value)) {
+        alert (`O número já exite cambada`);
+        return;
+    }
 
     formEvalido = validaNome(inputNomeContato.value);
     if (formEvalido) {
@@ -33,7 +40,7 @@ form.addEventListener ('submit', function(e) {
             containerMesagemError.innerHTML = mensagemError;
             document.querySelector('.error-message').style.display = 'block';
          setTimeout(function() {
-            document.querySelector.querySelector('.error-message').style.display = 'none'},3000);
+            document.querySelector('.error-message').style.display = 'none'}, 3000);
         }
     
 });
@@ -41,15 +48,20 @@ form.addEventListener ('submit', function(e) {
 function adicionaLinha () {
     const inputNomeContato = document.getElementById('nomeContato');
     const inputDDD = document.getElementById('codigoCidade');
+    inputDDD.addEventListener('input', function() {
+        if (this.value.length > 2) {
+            this.value = this.value.slice(0, 1);
+        }
+    });
     const inputTelefone = document.getElementById('numeroTelefone');
 
-    if (telefone.includes(inputTelefone)) {
+    if (telefone.includes(inputTelefone.value)) {
         alert(`O número de telefone; ${inputTelefone.value} já foi salvo`);
     } else {
 
         nome.push(inputNomeContato.value);
         ddd.push(inputDDD.value);
-        telefone.push(inputTelefone);
+        telefone.push(inputTelefone.value);
 
         let linha = '<tr>';
         linha += `<td>${inputNomeContato.value}</td>`;
