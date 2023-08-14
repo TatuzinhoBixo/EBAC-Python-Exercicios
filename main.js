@@ -21,7 +21,7 @@ form.addEventListener ('submit', function(e) {
     const inputTelefone = document.getElementById('numeroTelefone');
 
     if (telefone.includes(inputTelefone.value)) {
-        alert (`O número já exite cambada`);
+        alert (`O número de telefone já existente`);
         return;
     }
 
