@@ -23,8 +23,8 @@ form.addEventListener ('submit', function(e) {
         const containerMesagemSucesso = document.querySelector('.success-message');
         containerMesagemSucesso.innerHTML = mensagemSucesso;
         document.querySelector('.success-message').style.display = 'block';
-         setTimeout(function() {
-            document.querySelector('.success-message').style.display = 'none';}, 3000); 
+        /* setTimeout(function() {
+            document.querySelector('.success-message').style.display = 'none';}, 3000); */
         adicionaLinha();
         atualizaTabelas();
         

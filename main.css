@@ -7,7 +7,7 @@
 
 body {   /* cabeçalho e cor de fundo */
     background-color: #FDFFC9;
-    padding-top: 100px; 
+    padding-top: 30pxpx; 
 }
 
 header {   /* Titulo e Figura */ 
@@ -28,7 +28,7 @@ header h1{    /* tamanho texto */
 }
 
 .container { /* tamanho da página */
-    max-width: 1080px;
+    max-width: 960px;
     width: 100%
     margin: 0 auto;
 }
@@ -37,7 +37,7 @@ form input { /*valores referentes a caixa de texto que são add */
     font-size: 24px;
     background-color: #ffff;
     padding: 6px;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
     margin-left: 15px;
 }
 
@@ -70,15 +70,21 @@ table td { /*tamanho formulário dos dados */
 }
 
 .success-message {  /*classe do p no html */
+    font-size: 18px;
     background-color: #27ae60;
-    padding: 16px;
+    padding: 6px;
     color: #fff;
+    margin-bottom: 8px;
     display: none; /*Remove o contaúdo da tela */
+    margin-left: 15px;
+    max-width: 50%;
 }
 
 .error-message {
-    font-size: 12px;
+    font-size: 18px;
+    padding: 6px;
     background-color: red;
+    padding: 6px;
     color: #fff;
     margin-bottom: 8px;
     display: none;
