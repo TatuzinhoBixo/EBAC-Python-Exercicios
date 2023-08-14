@@ -32,8 +32,8 @@ form.addEventListener ('submit', function(e) {
             const containerMesagemError = document.querySelector('.error-message');
             containerMesagemError.innerHTML = mensagemError;
             document.querySelector('.error-message').style.display = 'block';
-        setTimeout(function() {
-            document.querySelector.querySelector('error-message').style.display = 'none'},3000);
+         setTimeout(function() {
+            document.querySelector.querySelector('.error-message').style.display = 'none'},3000);
         }
     
 });
@@ -44,7 +44,7 @@ function adicionaLinha () {
     const inputTelefone = document.getElementById('numeroTelefone');
 
     if (telefone.includes(inputTelefone)) {
-        alert(`O número de telefone; ${inputTelefone.Value} já foi salvo`);
+        alert(`O número de telefone; ${inputTelefone.value} já foi salvo`);
     } else {
 
         nome.push(inputNomeContato.value);
