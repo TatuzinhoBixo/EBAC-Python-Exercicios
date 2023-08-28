@@ -1,107 +1,18 @@
-* {     /* padrao */  
-    margin 0;
-    padding 0;
-    box-size: border-box;
-    font-family: 'Inconsolata', monospace;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    background-color: #fffdd0;
 }
 
-body {   /* cabeçalho e cor de fundo */
-    background-color: #FDFFC9;
-    padding-top: 30pxpx; 
+.titulo {
+    margin-top: 180px;
+    margin-
+    text-align: center;
 }
 
-header {   /* Titulo e Figura */ 
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 36px;
-}
-
-header img {   /*Tamanho Figura */
-    height: 46px;
-    margin-left: 26px;
-}
-
-header h1{    /* tamanho texto */
-    font-size: 56px;
-    font-weight: bold;
-}
-
-.container { /* tamanho da página */
-    max-width: 960px;
-    width: 100%
-    margin: 0 auto;
-}
-
-form input { /*valores referentes a caixa de texto que são add */
-    font-size: 24px;
-    background-color: #ffff;
-    padding: 6px;
-    margin-bottom: 8px;
-    margin-left: 15px;
-}
-
-form button {  /* valores referentes aos botôes */
-    background-color: #FEFFE3;
-    font-size: 24px; 
-    font-weight: bold;
-    cursor: pointer; 
-    padding: 6px;
-}
-
-table {         /* tamanho da tabela */
-    width: 90%;
-    margin-left: 15px;
-}
-
-
-table th {  /*cabeçalho tabela */
-    font-size: 24px;
-    font-weight: bold;
-    padding: 8px;
-}
-
-table td { /*tamanho formulário dos dados */
-    padding: 16px;
-    font-weight: bold;
-    background-color: #F1F3EB;
-    border: 1px solid #000;
-    
-}
-
-.success-message {  /*classe do p no html */
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #27ae60;
-    padding: 6px;
-    color: #fff;
-    margin-bottom: 8px;
-    display: none; /*Remove o contaúdo da tela */
-    margin-left: 15px;
-    max-width: 50%;
-}
-
-.error-message {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 6px;
-    background-color: red;
-    padding: 6px;
-    color: #fff;
-    margin-bottom: 8px;
-    display: none;
-    margin-left: 15px;
-    max-width: 50%;
-}
-
-input.error {
-    color: red;
-    border-color: red;
-    outline-color: red;
-}
-
-tfoot td {    /*conteúdo dos dados */
-    text-align: center; /* Centraliza horizontalmente o conteúdo */
-    vertical-align: middle; /* Centraliza verticalmente o conteúdo */
-    font-style+: italic; /* Aplica estilo itálico ao conteúdo */
+.caixa {
+    text-align: center;
+    width: 180px;
 }
