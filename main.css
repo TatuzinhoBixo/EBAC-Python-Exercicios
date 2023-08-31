@@ -21,6 +21,7 @@ body {
 }
 
 .input-container {
+    margin-top: 35px;
     display: flex;
     align-items: baseline;
 }
@@ -39,5 +40,8 @@ body {
     border-radius: 5px 5px;
     cursor: pointer;
     margin-left: 15px;
-}
+} 
 
+.concluido {
+    text-decoration: line-through;
+}
