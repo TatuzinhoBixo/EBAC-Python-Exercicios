@@ -25,7 +25,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1px;
+    z-index: 1;
 }
 
 header > .container,
@@ -37,14 +37,14 @@ footer > .container {
 
 nav {
     background-color: #580E94;
-    padding: 16px ;
-    #display: none;
-    border-radius: 20px
+    padding: 16px;
+    display: none;
 }
 
 nav li {
     list-style: none;
     display: inline;
+    margin-right: 16px;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -59,19 +59,31 @@ nav li a {
     text-decoration: none;
 }
 
-.menu-hamburguer {
+.hamburguer {
     width: 32px;
-    cursor: pointer
+    cursor: pointer;
 }
 
-.menu-hamburguer span {
+.hamburguer span {
     height: 2px;
     width: 100%;
-    background-color #fff;
-    display:block;
+    background-color: #fff;
+    display: block;
     margin-bottom: 4px;
 }
 
 .container-flex {
     display: flex;
+}
+
+#.quadro-carrousel {
+    #display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#carrousel img {
+    width: 100%;
+    height: auto;
 }
