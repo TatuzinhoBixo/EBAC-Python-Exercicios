@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#carroussel').slick({
+    $('#caroussel').slick({
         autoplay: true,
         arrows: false
     });

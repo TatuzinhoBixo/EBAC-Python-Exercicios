@@ -37,7 +37,7 @@ footer > .container {
 
 nav {
     background-color: #580E94;
-    padding: 16px;
+    padding: 16px 0;
     display: none;
 }
 
@@ -76,14 +76,56 @@ nav li a {
     display: flex;
 }
 
-#.quadro-carrousel {
-    #display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+#sobre-abrigo img {
+    max-width: 300px;
+    margin-right: 24px;
 }
 
-#carrousel img {
-    width: 100%;
-    height: auto;
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 12px;
+}
+
+.lista-adocao {
+    flex-wrap: wrap;
+}
+
+.lista-adocao li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-adocao li img {
+    max-width: 100%;
+}
+
+.lista-adocao li h3 {
+    margin: 6px 0;
+}
+
+.lista-adocao p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 60%;
+    border: none;
+    padding: 6px;
+    background-color: #119750;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
 }
