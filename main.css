@@ -7,6 +7,7 @@
 
 html {
     overflow-x: hidden;
+    background: #B7C7FF;
 }
 
 .container {
@@ -16,7 +17,7 @@ html {
 }
 
 header, footer {
-    background-color: #8F2BE0;
+    background-color: #1C3BAD;
     color: #fff;
     padding-top: 16px;
 }
@@ -28,6 +29,12 @@ header {
     z-index: 1;
 }
 
+header h1 {
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Currier New";
+}
+
 header > .container,
 footer > .container {
     justify-content: space-between;
@@ -36,7 +43,7 @@ footer > .container {
 }
 
 nav {
-    background-color: #580E94;
+    background-color: #4169FA;
     padding: 16px 0;
     display: none;
 }
@@ -45,7 +52,7 @@ nav li {
     list-style: none;
     display: inline;
     margin-right: 16px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -79,6 +86,16 @@ nav li a {
 #sobre-abrigo img {
     max-width: 300px;
     margin-right: 24px;
+}
+
+#sobre-abrigo h2 {
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+}
+
+#sobre-abrigo p {
+    font-size: 18px;
 }
 
 section {
@@ -118,7 +135,7 @@ section h2 {
 
 button {
     display: block;
-    width: 60%;
+    width: 50%;
     border: none;
     padding: 6px;
     background-color: #119750;
@@ -129,3 +146,39 @@ button {
     cursor: pointer;
     border-radius: 6px;
 }
+
+.form-campo {
+    margin-bottom: 14px;
+}
+
+.form-campo {
+    font-width: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 6px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+    display: inline-block;
+}
+
+footer li img {
+    height: 32px;
+}
+
