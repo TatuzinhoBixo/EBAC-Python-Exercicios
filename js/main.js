@@ -4,7 +4,8 @@ $(document).ready(function () {
         arrows: false
     });
 
-    $('.hamburger').click(function() {
+    $('.hamburguer').click(function() {
         $('nav').slideToggle();
     })
+    
 })
