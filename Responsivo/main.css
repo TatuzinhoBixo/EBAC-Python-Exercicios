@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.submenu {
+    display: none;
+}
+
+.menu li {
+    float: left;
+}
+
+#.clear {
+    clear: left;
+}
