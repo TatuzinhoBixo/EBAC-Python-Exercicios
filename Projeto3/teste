@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel com imagens</title>
+  <!-- Adicione o link para o arquivo Bootstrap CSS -->
+  <link href="caminho_para_o_seu_arquivo_bootstrap.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <style>
+    /* Estilize as imagens no carousel */
+    .carousel-item img {
+      max-width: 100%; /* Defina a largura máxima como 100% do contêiner pai */
+      height: auto; /* Mantenha a proporção da imagem */
+      max-height: 400px; /* Defina a altura máxima desejada para a imagem */
+      margin: 0 auto; /* Centralize a imagem horizontalmente */
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg sticky-lg-top p-4" id="cabecalho">
+    <div class="container">
+        <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+            <ul class="nav nav-pills d-block d-md-flex">
+                <li class="nav-item fw-bold">
+                    <a href="#sobre-o-restaurante" class="nav-link">
+                        <i class="bi bi-house-door me-1"></i>
+                        Sobre o restaurante
+                    </a>
+                </li>
+                <!-- Adicione os outros itens do menu conforme necessário -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Início do carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="caminho_para_sua_imagem1.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="caminho_para_sua_imagem2.jpg" class="d-block w-100" alt="Imagem 2">
+    </div>
+    <!-- Adicione mais itens do carousel conforme necessário -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+<!-- Adicione os scripts do Bootstrap e outros scripts necessários -->
+<script src="caminho_para_o_seu_arquivo_bootstrap.js"></script>
+</body>
+</html>
